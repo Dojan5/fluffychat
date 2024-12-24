@@ -112,12 +112,18 @@ class StickerPickerDialogState extends State<StickerPickerDialog> {
               floating: true,
               pinned: true,
               automaticallyImplyLeading: false,
-              backgroundColor: Colors.transparent,
+              backgroundColor: theme.colorScheme.secondaryContainer,
               title: SizedBox(
                 height: 42,
                 child: TextField(
                   autofocus: false,
                   decoration: InputDecoration(
+                    filled: true,
+                    fillColor: theme.colorScheme.secondaryContainer,
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide.none,
+                      borderRadius: BorderRadius.circular(99),
+                    ),
                     hintText: L10n.of(context).search,
                     prefixIcon: const Icon(Icons.search_outlined),
                     contentPadding: EdgeInsets.zero,
