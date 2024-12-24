@@ -50,6 +50,7 @@ class ChatEmojiPicker extends StatelessWidget {
                               enabled: false,
                             ),
                             categoryViewConfig: CategoryViewConfig(
+                              backgroundColor: theme.colorScheme.secondaryContainer,
                               backspaceColor: theme.colorScheme.primary,
                               iconColor:
                                   theme.colorScheme.primary.withAlpha(128),
